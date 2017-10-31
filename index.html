@@ -1,0 +1,69 @@
+<!DOCTYPE HTML>
+<html xml:lang="en" lang="en">
+<head>
+  <title>CSE442 | A3 World's View on Trump</title>
+  <link href="https://cse442-17s.github.io/style.css" media="all" rel="stylesheet" />
+</head>
+
+<body>
+<div class="content">
+
+  <section class="title">
+    <a href="/">World's View on Trump</a>
+  </section>
+
+  <section>
+    <p>
+      <strong>Team Members</strong>: James Wang, Mingjian Fu, Chen-chung Hsu, Jinying Chen
+    </p>
+  </section>
+
+  <section>
+    <em>[Add: Interactive visualization goes here!]</em>
+    <strong>
+      <a href="../color_map.html">World's View on Trump</a>
+    </strong>
+  </section>
+
+  <section>
+    <h2>Design Rationale</h2>
+    </p>
+    <p>
+      Our first idea was to show how different countries' trust changes over time with a world map and a drag bar. However, there were a lot of null values in the dataset, so it's difficult to see the trends.
+      Thus, we choose a world map with countries with different color labels representing the approval rating on Trump's policies regarding certain issues.<br>
+    </p>
+    <p>
+      The first interaction technique is a drop-down menu. Users can use the drop-down menu to select what issue they are interested in and view the approval rating on the world map. Before we were considering using a drag bar for choosing issues, but drag bar implies continuity while those issues have no such property. We also considered using buttons, but it's hard to tell what those buttons represent. Thus, we use drop-down menu instead of drag bar or buttons. <br> 
+    </p>
+    <p>
+      The second interaction technique is the zooming feature on the world map. Users can click on countries on the map to have a closer view on those countries. Besides that, when the cursor hovers over a country, a text box with the name of the country and the approval rating pops up. We want to make it easier for the users to check the exact approval rating without checking the legend. Users can also have a overview of the rating across the world with the legend. <br>
+    </p>
+    <p>
+      We wanted to keep the data of change of world's trust over time, so we created another tab view with a map and a line chart. The most common way to see how things change over time is line chart. Thus, we provided a line chart with world's average "trust rating". If a user would like to look into a specific country. He/She can click on the map as before to zoom in, and the trend of that country will also show up in the line chart.  
+    </p>
+  </section>
+
+  <section>
+    <h2>Development Process</h2>
+    <p>
+      [Add: An overview of your development process. Describe how the work was split among the team members. Include a commentary on the development process, including answers to the following questions: Roughly how much time did you spend developing your application (in people-hours)? What aspects took the most time?]
+    </p>
+    <p>
+      First, we searched online for a topic and a dataset our team was interested in. After we finalized our topic and dataset, we brainstormed on what visual encodins and interaction techniques we should use. We found out there were many missing values in the data set, so we decided to changed our focus to world's view on Trump's policies.    
+    </p>
+    <p> 
+      We think that the part of learning different features of D3 is the most time-consuming part.
+    </p>
+    <p>
+      Overall, we spent roughly 27 hours on this. James worked on setting up the colored map and the html layout. Jinying worked on changing the different colored maps and implementing the explanations portions. Chen-chung worked on gathering data and write-up. Mingjian worked on interactive line chart.
+    </p>
+    
+  </section>
+
+  <div class="footer">
+    <a href="https://cse442-17f.github.io/">CSE 442 Data Visualization</a> -
+    <a href="http://www.washington.edu">University of Washington</a>
+  </div>
+</div>
+</body>
+</html>
